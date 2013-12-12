@@ -20,7 +20,7 @@ describe('Array to DOM node children mapping', function() {
         };
         ko.utils.setDomNodeChildrenFromArrayMapping(testNode, array, mapping);
         expect(testNode.childNodes.length).toEqual(4);
-        expect(testNode.childNodes[0].innerHTML).toEqual("A1");
+        expect(testNode.childNodes[0].innerHTML).toEqual("INVALID VALUE");
         expect(testNode.childNodes[1].innerHTML).toEqual("A2");
         expect(testNode.childNodes[2].innerHTML).toEqual("B1");
         expect(testNode.childNodes[3].innerHTML).toEqual("B2");
